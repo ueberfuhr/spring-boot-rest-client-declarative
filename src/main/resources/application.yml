@@ -1,0 +1,4 @@
+application:
+  webclient:
+    base-url: https://verkehr.autobahn.de/o/autobahn
+    timeout: 2000
