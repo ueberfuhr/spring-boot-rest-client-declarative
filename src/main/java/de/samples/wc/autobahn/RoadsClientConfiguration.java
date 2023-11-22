@@ -18,7 +18,8 @@ public class RoadsClientConfiguration {
   public RoadsClient roadsClient(WebClient webClient) {
     final var adapter = WebClientAdapter
       .forClient(webClient);
-    final var factory = HttpServiceProxyFactory.builder(adapter)
+    final var factory = HttpServiceProxyFactory
+      .builder(adapter)
       .build();
     return factory.createClient(RoadsClient.class);
   }
